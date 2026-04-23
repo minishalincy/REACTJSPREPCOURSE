@@ -1,9 +1,11 @@
 import React from "react";
 
-const Hero = function(){
+const Hero = () =>{
+
+    let user = "minisha"
     return(
         <>
-        <h1>This is Hero Section</h1>
+        <h1 style={{color:"purple"}}> <span style={{color:"orange"}}>Hello</span>,{user}</h1>
         </>
     )
 }
