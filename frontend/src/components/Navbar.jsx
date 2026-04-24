@@ -3,7 +3,20 @@ import React from "react";
 const Navbar = function(){
     return(
         <>
-        <h3>This is navbar</h3>
+       
+       
+        <div className="nav">
+            <div className="left">
+                <h3>Logo</h3>
+            </div>
+
+            <div className="right">
+                <h3>Signup</h3>
+                <h3>Login</h3>
+            </div>
+        </div>
+      
+      
         </>
     )
 }
