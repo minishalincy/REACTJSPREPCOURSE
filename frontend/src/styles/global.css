@@ -21,4 +21,9 @@
   justify-content: space-between;
   align-items: center;
   width: 12%;
+  color: purple;
+}
+
+img{
+    height: 28px;
 }

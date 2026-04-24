@@ -7,7 +7,6 @@ const App = function () { //funtional expression
   return(
   <>
         <Navbar/>
-        
   </>
   )
 };

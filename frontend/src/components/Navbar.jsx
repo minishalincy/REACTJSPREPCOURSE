@@ -1,13 +1,13 @@
 import React from "react";
 
-const Navbar = function(){
+const Navbar = ()=>{
     return(
         <>
        
        
         <div className="nav">
             <div className="left">
-                <h3>Logo</h3>
+                <img src="./public/favicon.svg" alt="vite logo" />
             </div>
 
             <div className="right">
