@@ -1,14 +1,16 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+// import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
-const App = function () { //funtional expression
-  return(
-  <>
-        <Navbar/>
-  </>
-  )
+const App = function () {
+  //funtional expression
+  return (
+    <>
+      {/* <Navbar/> */}
+      <Home />
+    </>
+  );
 };
 
-export default App
+export default App;
