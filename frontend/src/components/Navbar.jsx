@@ -7,7 +7,8 @@ const Navbar = ()=>{
        
         <div className="nav">
             <div className="left">
-                <img src="./public/favicon.svg" alt="vite logo" />
+                
+                <h1>Bucky</h1>
             </div>
 
             <div className="right">
