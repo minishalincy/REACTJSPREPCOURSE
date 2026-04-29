@@ -23,9 +23,9 @@ const Home = () => {
 
 
         <div className="products">
-          <img src="https://static.ftshp.digital/img/p/9/9/1/6/5/1/991651.jpg" alt="iphone 17 pro max" />
-          <img src="https://m.media-amazon.com/images/I/71gi11m8qHL.jpg" alt="ipad" />
-          <img src="https://tse2.mm.bing.net/th/id/OIP.eVjasQUSYLIpd9aVg6yteQHaKs?pid=Api&P=0&h=180" alt="macbook pro" />
+          <img src="https://static.ftshp.digital/img/p/9/9/1/6/5/1/991651.jpg" alt="converse" />
+          <img src="https://m.media-amazon.com/images/I/71gi11m8qHL.jpg" alt="make up" />
+          <img src="https://cdn-img.prettylittlething.com/9/0/0/4/90040533e58fb3788d09e0e44f54421bc637dca5_cmc7305_3.jpg" alt="outfit" />
         </div>
       </center>
       <Footer/>

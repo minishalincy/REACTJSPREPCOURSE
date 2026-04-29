@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react'
+import MapExample from './components/MapExample'
 
-const Hero = function(){
-  return(
-    <>
-    <h1>This is Hero section</h1>
-    </>
+const App = () => {
+  return (
+    <MapExample/>
   )
 }
+
+export default App

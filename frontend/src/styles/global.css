@@ -35,7 +35,7 @@ img{
   flex-direction: column;
   background-color: whitesmoke;
   color: black;
-  height: 200px;
+  height: 300px;
   gap: 20px
 }
 
@@ -78,6 +78,7 @@ img{
   box-shadow: 0px 0px 4px rgb(198, 198, 226) ;
   width: 250px;
   height: 240px;
+ 
 }
 
 .footer{
