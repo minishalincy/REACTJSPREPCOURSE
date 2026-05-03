@@ -8,7 +8,8 @@ const App = () => {
   let skills = ["MongoDB", "Expressjs", "Reactjs", "Nodejs"]
   let address = {
     city: "bangalore",
-    state: "karnataka"
+    state: "karnataka",
+    pincode: "560105"
   }
   return (
     <>
