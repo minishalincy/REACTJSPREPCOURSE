@@ -1,26 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const ConditionalRenderingUsingIfElse = () => {
+  const [change, setChange] = useState(false);
+  let message;
 
-    const[change, setChange] = useState(false)
-    let message
-    
-    if(change){
-        message = <h1>Welcome</h1>
-    }else{
-        message = <h1>Login...</h1>
-    }
+  //conditions
+  if (change) {
+    message = "Welcome";
+  } else {
+    message = <h1>Login...</h1>;
+  }
 
-    function toggle(){
-        setChange(!change)
-    }
+  function toggle() {
+    setChange(!change);
+  }
   return (
-   
     <>
-        <h2>{message}</h2>
-        <button onClick={toggle}>Click</button>
+      {/* rendering the message */}
+      <h1>{message}</h1>
+      <button onClick={toggle}>Click</button>
     </>
-  )
-}
+  );
+};
 
-export default ConditionalRenderingUsingIfElse
+export default ConditionalRenderingUsingIfElse;
