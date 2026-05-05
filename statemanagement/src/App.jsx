@@ -3,6 +3,7 @@ import UseStateE from './components/UseStateE'
 import UseStateCounter from './components/UseStateCounter'
 import ConditionalRenderingUsingIfElse from './components/ConditionalRenderingUsingIfElse'
 import UseStateP from './components/UseStateP'
+import ConditionalRenderingUsingShortCircuit from './components/ConditionalRenderingUsingShortCircuit'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
     <UseStateCounter/>
     <ConditionalRenderingUsingIfElse/>
     <UseStateP/>
+    <ConditionalRenderingUsingShortCircuit/>
     </>
   )
 }
