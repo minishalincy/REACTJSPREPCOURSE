@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-const ConditionalRenderingUsingShortCircuit = ()=>{
+const CRUsingShortCircuit = ()=>{
 
     const[state,setState] = useState(false)
 
@@ -26,4 +26,4 @@ const ConditionalRenderingUsingShortCircuit = ()=>{
     )
 }
 
-export default ConditionalRenderingUsingShortCircuit
+export default CRShortCircuit

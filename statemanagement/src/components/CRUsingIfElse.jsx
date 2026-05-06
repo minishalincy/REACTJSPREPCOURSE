@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ConditionalRenderingUsingIfElse = () => {
+const CRUsingIfElse = () => {
   const [change, setChange] = useState(false);
   let message;
 
@@ -14,6 +14,8 @@ const ConditionalRenderingUsingIfElse = () => {
   function toggle() {
     setChange(!change);
   }
+
+
   return (
     <>
       {/* rendering the message */}
@@ -23,4 +25,4 @@ const ConditionalRenderingUsingIfElse = () => {
   );
 };
 
-export default ConditionalRenderingUsingIfElse;
+export default CRUsingIfElse;
