@@ -1,6 +1,12 @@
 import React from "react";
-
+import {toast, ToastContainer} from "react-toastify"
 const Navbar = ()=>{
+    function login(){
+        toast.success("Login Successfull")
+    }
+    function register(){
+        toast.success("Registered")
+    }
     return(
         <>
        
@@ -12,8 +18,9 @@ const Navbar = ()=>{
             </div>
 
             <div className="right">
-                <h3>Signup</h3>
-                <h3>Login</h3>
+                <button id="signupBtn" onClick={register}>SignUp</button>
+                <button onClick={login}>Login</button>
+                <ToastContainer autoClose={1000} position="top-center"/>
             </div>
         </div>
     

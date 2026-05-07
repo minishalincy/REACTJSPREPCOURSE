@@ -7,7 +7,7 @@ const Home = () => {
       <Navbar />
       <div className="hero-section">
         <h2>
-          Welcome to <span style={{ color: "blue" }}>Bucky🛒</span>
+          Welcome to <span style={{ color: "rgb(59, 105, 141)" }}>Bucky🛒</span>
         </h2>
         <button>Shop now</button>
         <p>Shop Your Bucketlist</p>
