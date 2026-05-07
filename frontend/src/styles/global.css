@@ -100,7 +100,7 @@ button{
   font-weight: 400;
   border: none;
   color: white;
-  background-color: orange;
+  background-color: rgb(25, 61, 89);
   box-shadow: 0 0 0  1px;
   cursor: pointer;
 }
