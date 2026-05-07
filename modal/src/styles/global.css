@@ -1,0 +1,70 @@
+/* Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(to right, #f5d020, #f53803); */
+    background: gray;
+    height: 100vh;
+}
+
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.signUpText {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 14px;
+}
+
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background:rgb(227, 191, 45);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#signUpBtn{
+    background: gray;
+
+}
