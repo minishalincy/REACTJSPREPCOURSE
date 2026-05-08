@@ -1,15 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <div className="hero-section">
         <h2>
           Welcome to <span style={{ color: "rgb(59, 105, 141)" }}>Bucky🛒</span>
         </h2>
-        <button>Shop now</button>
+        <Link to={"/products"}>
+  <button>Shop now</button>
+</Link>
         <p>Shop Your Bucketlist</p>
       </div>
 
@@ -28,7 +29,7 @@ const Home = () => {
           <img src="https://cdn-img.prettylittlething.com/9/0/0/4/90040533e58fb3788d09e0e44f54421bc637dca5_cmc7305_3.jpg" alt="outfit" />
         </div>
       </center>
-      <Footer/>
+     
     </>
   );
 };
