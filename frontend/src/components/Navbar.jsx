@@ -16,8 +16,9 @@ const Navbar = ()=>{
         <div className="nav">
             <div className="left">
                 
-                <Link to={"/"}><img width={"30px"} src="/BuckyLogo.png"/></Link>
-            </div>
+<Link to={"/"}>
+  <img className="logo" src="/BuckyLogo.png" alt="Bucky Logo" />
+</Link>            </div>
 
             <div className="right">
                <Link to={"signup"}> <button id="signupBtn" onClick={register}>SignUp</button></Link>

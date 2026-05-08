@@ -19,7 +19,6 @@ const Products = () => {
           <img src="https://cdn-img.prettylittlething.com/9/0/0/4/90040533e58fb3788d09e0e44f54421bc637dca5_cmc7305_3.jpg" alt="outfit" />
         </div>
       </center>
-      <Footer/>
     </>
   );
 };
