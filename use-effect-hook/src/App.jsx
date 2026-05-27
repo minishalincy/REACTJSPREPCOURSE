@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ControlledFormComponent from "./components/ControlledFormComponent";
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -28,8 +29,9 @@ const App = () => {
           );
         })}
       </div>
+      <ControlledFormComponent/>
     </>
   );
 };
 
-export default App;
+export default App; 
