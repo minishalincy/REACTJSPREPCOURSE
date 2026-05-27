@@ -1,19 +1,26 @@
-/* App background */
+
 body{
     background-color: darkblue;
     margin: 0;
-    padding: 40px;
+    padding: 10px;
 }
 
-/* Main container */
+.user{
+    font-size: xx-large;
+    font-style: bold;
+    font-weight: 500;
+    color: white;
+    padding: 20px;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap:10px;
+    gap:12px;
 }
 
-/* Card */
+
 .card{
     width: 180px;
     background-color: white;
@@ -23,7 +30,7 @@ body{
     box-shadow: 0px 0px 10px gray;
 }
 
-/* Image */
+
 .card img{
     width: 120px;
     height: 120px;
@@ -32,7 +39,7 @@ body{
      box-shadow: 0px 0px 10px gray;
 }
 
-/* Text */
+
 .card h2,
 .card h3,
 .card h4{
@@ -40,7 +47,6 @@ body{
     font-size: medium;
 }
 
-/* Button */
 .card button{
     padding: 10px;
     width: 120px;
