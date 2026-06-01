@@ -13,6 +13,20 @@
       "mobile": "9375876398",
       "password": "lincy",
       "id": "DJlKzE6TKv0"
+    },
+    {
+      "name": "mini",
+      "email": "mini@gmail.com",
+      "mobile": "39758736457",
+      "password": "minisha",
+      "id": "mX9HRvUuHg4"
+    },
+    {
+      "name": "mini",
+      "email": "user2.minishalincy@gmail.com",
+      "mobile": "297489",
+      "password": "12345678!@#",
+      "id": "1LkwVSHg8lQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
