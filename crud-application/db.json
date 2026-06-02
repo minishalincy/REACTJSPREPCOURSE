@@ -1,0 +1,29 @@
+{
+  "studentData": [
+    {
+      "id": "1"
+    },
+    {
+      "name": "Minisha",
+      "email": "minisha@gmail.com",
+      "dept": "cse",
+      "course": "mern",
+      "id": "PifmFmTNBKg"
+    },
+    {
+      "name": "Lincy",
+      "email": "lincy@gmail.com",
+      "dept": "cse",
+      "course": "MERN",
+      "id": "bAG1I7UR9vg"
+    },
+    {
+      "name": "LincyMini",
+      "email": "linc@gmail.com",
+      "dept": "ISE",
+      "course": "Java",
+      "id": "hg9VS50oJ9A"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
