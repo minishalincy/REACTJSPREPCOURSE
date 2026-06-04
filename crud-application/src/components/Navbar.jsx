@@ -10,9 +10,9 @@ const Navbar = () => {
         </div>
 
         <div className="right">
-          <Link to="/"><button>Home</button></Link>
-          <Link to="/addstudent"><button>Add</button></Link>
-          <Link to="/viewstudent"><button>View</button></Link>
+          <Link to="/"><h1>Home</h1></Link>
+          <Link to="/addstudent"><h1>Add</h1></Link>
+          <Link to="/viewstudent"><h1>View</h1></Link>
         </div>
       </div>
     </>

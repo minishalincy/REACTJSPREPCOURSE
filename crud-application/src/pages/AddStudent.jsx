@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const AddStudent = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [dept, setDept] = useState("");
   const [course, setCourse] = useState("");
+  //for navigation
+  const navigate = useNavigate();
 
   function handleForm(e) {
     e.preventDefault();
@@ -28,6 +31,7 @@ const AddStudent = () => {
         setEmail("");
         setDept("");
         setCourse("");
+        navigate("/viewstudent")
       })
       .catch((err) => {
         toast.error("Failed..");
