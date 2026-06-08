@@ -1,16 +1,9 @@
 {
   "studentData": [
     {
-      "name": "Minisha",
-      "email": "minisha@gmail.com",
-      "dept": "cse",
-      "course": "mern",
-      "id": "PifmFmTNBKg"
-    },
-    {
       "name": "Lincy",
       "email": "lincy@gmail.com",
-      "dept": "cse",
+      "dept": "CS",
       "course": "MERN",
       "id": "ot7y-Yc_ezk"
     }
