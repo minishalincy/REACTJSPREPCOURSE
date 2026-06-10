@@ -41,6 +41,7 @@ const App = () => {
     fetchData();
   }, []);
 
+  //step 5 handle the form
   function handleForm(e) {
     e.preventDefault();
     let imageData = { image }; //image comtains key and value so stored in object form
