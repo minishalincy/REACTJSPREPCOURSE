@@ -16,11 +16,11 @@ const Auth = () => {
   return (
     <>
       <center>
-        <div>
+        <div className="authCard">
           <h1>Enter Passcode</h1> <br />
           <input
             type="password"
-            placeholder="enter passcode"
+            placeholder="Enter passcode"
             required
             value={passcode}
             onChange={(e)=>{setPasscode(e.target.value)}}
