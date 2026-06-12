@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useRef, useState } from "react";
+import { toast } from "react-toastify";
 
 const UserSignup = () => {
   const [name, setName] = useState("");
@@ -6,6 +8,8 @@ const UserSignup = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const[profilepic, setProfilepic] = useState("")
+
+  const inputRef = useRef(null)
 
 
   function handleImage(e) {
@@ -25,12 +29,30 @@ const UserSignup = () => {
       reader.readAsDataURL(file);
     }
 
+    function signup(e){
+      e.preventDefault()
+      const user = {name, email, phone,password,profilepic}
+      axios.post(`http://localhost:3000/users`, user)
+      .then(()=>{
+        toast.success("User Registered")
+        setName("")
+        setEmail("")
+        setPassword("")
+        setPhone("")
+        setProfilepic("")
+        inputRef.current.value = ""; //syntax for useRef hook
+      })
+      .catch(()=>{
+        toast.error("User already exists")
+      })
+    }
+
     
   return (
     <>
       <center>
         <h1>User Signup</h1>
-        <form className="admin-form">
+        <form className="admin-form" onSubmit={signup}>
           <input
             className="admininput"
             type="text"
@@ -40,6 +62,7 @@ const UserSignup = () => {
             onChange={(e) => setName(e.target.value)}
           />
           <input
+          
             type="email"
             placeholder="Enter Email"
             required
@@ -60,7 +83,7 @@ const UserSignup = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <input type="file" required onChange={handleImage}/>
+          <input type="file" required onChange={handleImage} ref={inputRef}/>
           <button className="adminbtn">Sign Up</button>
         </form>
       </center>
