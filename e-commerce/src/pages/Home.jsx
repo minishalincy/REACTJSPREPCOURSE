@@ -12,7 +12,7 @@ const Home = () => {
           <h2>
             Welcome to{" "}
             <span style={{ color: "rgb(7, 70, 10)" }}>
-              Bucky🛒
+              Bucky🧺
             </span>
           </h2>
 

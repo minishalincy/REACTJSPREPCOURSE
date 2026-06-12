@@ -5,11 +5,11 @@ const Footer = () => {
    <>
    <div className='footer'>
     <div className='right'>
-        <h2>Bucky</h2>
+        <h2>Bucky🧺</h2>
         <h4>Shop Your BucketList</h4>
     </div>
 
-    <div className='left'>
+    <div className=''>
         {/* <p className='left p'>Products</p> */}
     <ul>
        <li>Mobiles</li>
