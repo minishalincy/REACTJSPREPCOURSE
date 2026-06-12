@@ -33,7 +33,7 @@ const AdminLogin = () => {
         />{" "}
         <br /> <br />
         <input className="admininput"
-          type="text"
+          type="password"
           placeholder="Enter password"
           required
           value={password}

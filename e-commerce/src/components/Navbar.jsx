@@ -7,12 +7,12 @@ const Navbar = () => {
     <div className="nav">
         <div className="left">
           {/* <img className="logo" src="./public/favicon.svg" /> */}
-          <h1>Logo</h1>
+          <h1>Bucky</h1>
         </div>
 
         <div className="right">
           <Link to="adminlogin"><h1>Admin</h1></Link>
-          <Link to=""><h1>User</h1></Link>
+          <Link to="usersignup"><h1>User</h1></Link>
         </div>
       </div>
     </>

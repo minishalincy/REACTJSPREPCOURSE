@@ -198,6 +198,27 @@ input, textarea{
 .admin-form .adminbtn {
   margin-top: 10px;
 }
+.admin-form select {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #8bc48b;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.adminnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 32px;
+  background-color: darkolivegreen;
+}
+.adminnav a {
+  text-decoration: none;
+  color: white;
+}
 
 /* FOOTER */
 
