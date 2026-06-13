@@ -10,7 +10,7 @@ const AdminLogin = () => {
 
   function adminLogin(e){
     e.preventDefault()
-    if(email === "admin@gmail.com" && password === "admin123"){
+    if(email === "a@gmail.com" && password === "a"){
         toast.success("Login success")
         navigate("/admindashboard")
     } else{

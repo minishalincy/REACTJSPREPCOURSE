@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useRef, useState } from "react";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const UserSignup = () => {
   const [name, setName] = useState("");
@@ -85,6 +87,7 @@ const UserSignup = () => {
           />
           <input type="file" required onChange={handleImage} ref={inputRef}/>
           <button className="adminbtn">Sign Up</button>
+          <h6>Account aleady exists? <Link to={'/userlogin'}>Login</Link></h6>
         </form>
       </center>
     </>
