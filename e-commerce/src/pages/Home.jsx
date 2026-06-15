@@ -17,10 +17,12 @@ const Home = () => {
           </h2>
 
           <button className="herobtn">Shop now</button>
-        </div>
+        
 
         <p>Shop Your Bucketlist 🠇</p>
-      </center>
+     
+      </div>
+       </center>
 
       <center>
         <h2 className="pro">Products</h2>

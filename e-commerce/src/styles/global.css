@@ -13,6 +13,10 @@ body {
   align-items: center;
   padding: 2px 32px;
   background-color: darkolivegreen;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .left {
@@ -32,6 +36,7 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
+  color: white;
 }
 
 .right a {
@@ -45,6 +50,9 @@ body {
 }
 
 /* HERO */
+.herosection{
+  margin-top: 150px;
+}
 
 .herobtn {
   width: 110px;
@@ -108,6 +116,29 @@ body {
   color: #222;
 }
 
+.cardcontainer{
+
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+
+}
+.cards{
+ background: white;
+  width: 280px;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;  
+}
+
+.cards img{
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 12px;
+}
 .btns {
   display: flex;
   justify-content: space-between;
@@ -235,6 +266,20 @@ input, textarea{
   color: white;
 }
 
+
+.profile{
+  height: 80px;
+
+margin-top: 15px;
+  border: 2px solid #8bc48b;
+  border-radius: 50%;
+    border-color: darkolivegreen;
+  box-shadow: 0 0 8px rgba(85, 107, 47, 0.3);
+}
+.welcometext{
+
+margin-top: 0%;
+}
 /* FOOTER */
 
 .footer{

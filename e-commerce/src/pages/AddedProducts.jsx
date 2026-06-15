@@ -35,6 +35,7 @@ const AddedProducts = () => {
       </div>
       <center>
         <h1>Product List</h1>
+        <div className="cardcontainer">
         {products.map((x) => {
           return (
             <div className="products">
@@ -45,7 +46,9 @@ const AddedProducts = () => {
            
           );
         })}
+        </div>
          </center>
+
       
     </>
   );
