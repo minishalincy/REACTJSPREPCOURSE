@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -7,6 +7,7 @@ const UserDashboard = () => {
 
   const[user, setUser] = useState({})
   const[products, setProducts] = useState([])
+  const[filterproduct, setFilterproduct] = useState("")
   const navigate = useNavigate();
 
   function logout(e) {
@@ -36,6 +37,10 @@ function fetchProducts(){
 useEffect(()=>{
   fetchProducts()
 },[])
+
+let filteredProducts = products.filter((x) => {
+    return x.name.toLowerCase().startsWith(filterproduct.toLowerCase()); //can use includes() method too
+  });
   return (
     <>
       <div className="adminnav">
@@ -50,15 +55,18 @@ useEffect(()=>{
           </button>
         </div>
       </div>
-
-        
+        <center>
+        <div className="profile-container">
         <img src={user.profilepic} className="profile" alt="" />
         <div className="welcometext">   
         <h1 >Welcome, {user.name}</h1>
-        </div>   
+        </div> 
+        </div>  
+        </center>
         <center>
-          <input type="text" className="search 🔍" className="searchInput"/> <br />
-       
+          <input type="text" placeholder="search 🔍" className="searchInput" value={filterproduct}
+        onChange={(x) => {
+          setFilterproduct(x.target.value)}}/> <br />
         <button className="catbtn">Electronics</button>
         <button className="catbtn">Makeup</button>
         <button className="catbtn">Shoes</button>
@@ -66,21 +74,24 @@ useEffect(()=>{
 
 <center><h1>Products</h1></center>
 <div className="cardcontainer">
-{
-  
-  products.map((x)=>{
-    return (<div>
+  {filteredProducts.length > 0 ? (
+    filteredProducts.map((x) => (
       <div className="cards">
-      <img src={x.image} height={"200px"} alt="" />
-      <h3>{x.name}</h3>
+        <img src={x.image} height="200px" alt="" />
+        <h3>{x.name}</h3>
+
+        <button
+          className="adminbtn"
+          onClick={() => navigate(`productdetail/${x.id}`)}
+        >
+          View Product
+        </button>
       </div>
-      <button className="adminbtn" onClick={()=>{
-        navigate(`productdetail/${x.id}`)
-      }}>View Product</button>
-    </div>
-    )
-  })
-}
+    ))
+  ) : (
+    <center><h4 style={{color:"maroon"}}>Result not found</h4></center>
+    
+  )}
 </div>
       
     </>

@@ -37,6 +37,7 @@ body {
   gap: 30px;
   align-items: center;
   color: white;
+  margin-right: 40px;
 }
 
 .right a {
@@ -50,7 +51,7 @@ body {
 }
 
 /* HERO */
-.herosection{
+.herosection {
   margin-top: 150px;
 }
 
@@ -70,6 +71,15 @@ body {
   transform: scale(1.05);
 }
 
+.searchInput {
+  width: 30%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #8bc48b;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
 
 /* .categorycard{
   padding: 50px;
@@ -79,8 +89,7 @@ body {
 /* PRODUCTS */
 
 .pro {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 40px;
 }
 
@@ -116,23 +125,21 @@ body {
   color: #222;
 }
 
-.cardcontainer{
-
+.cardcontainer {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap; 
-
+  flex-wrap: wrap;
 }
-.cards{
- background: white;
+.cards {
+  background: white;
   width: 280px;
   padding: 18px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
-.cards img{
+.cards img {
   width: 100%;
   height: 240px;
   object-fit: contain;
@@ -159,13 +166,12 @@ body {
   color: green;
 }
 
-
 .buybtn {
   background-color: darkolivegreen;
   color: white;
 }
-.adminbtn{
-   width: 110px;
+.adminbtn {
+  width: 110px;
   padding: 12px;
   border-radius: 100px;
   border: none;
@@ -179,9 +185,19 @@ body {
 .adminbtn:hover {
   transform: scale(1.05);
 }
+.incBtn {
+  width: 30px;
+  padding: 8px;
+  border-radius: 100px;
+  border: none;
+  background: darkolivegreen;
+  color: white;
+  box-shadow: 0px 8px 20px rgba(7, 7, 7, 0.2);
+  cursor: pointer;
+}
 
-.logoutbtn{
-   width: 110px;
+.logoutbtn {
+  width: 110px;
   padding: 12px;
   border-radius: 100px;
   border: none;
@@ -195,8 +211,8 @@ body {
   transform: scale(1.05);
 }
 
-
-input, textarea{
+input,
+textarea {
   padding: 12px;
   border-radius: 8px;
   border: 2px solid green;
@@ -254,36 +270,52 @@ input, textarea{
   box-sizing: border-box;
 }
 
-.adminnav{
+.adminnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2px 32px;
   background-color: darkolivegreen;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 .adminnav a {
   text-decoration: none;
   color: white;
 }
 
+.profile-container{
+ margin-top: 80px;
+}
 
-.profile{
+.profile {
   height: 80px;
-
-margin-top: 15px;
+  margin-top: 15px;
   border: 2px solid #8bc48b;
   border-radius: 50%;
-    border-color: darkolivegreen;
+  border-color: darkolivegreen;
   box-shadow: 0 0 8px rgba(85, 107, 47, 0.3);
 }
-.welcometext{
+.welcometext {
+  text-align: center;
+  margin-top: 0%;
+}
 
-margin-top: 0%;
+.catbtn {
+  width: 80px;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 100px;
+  border: 2px solid darkolivegreen;
+  background: darkolivegreen;
+  color: white;
+  box-shadow: 0px 8px 20px rgba(7, 7, 7, 0.2);
+  cursor: pointer;
 }
 /* FOOTER */
 
-.footer{
- background-color: #e6f4e6;
- 
+.footer {
+  background-color: #e6f4e6;
 }
-
