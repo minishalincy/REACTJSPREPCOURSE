@@ -9,10 +9,12 @@ const App = () => {
   }
 
    function decrement() {
-    
+    if(counter > 1){
       setCounter(counter - 1);
-    
+    }
   }
+  let price = 169000
+  let total = counter * price
   return (
 
     <>
@@ -27,6 +29,7 @@ const App = () => {
         <button onClick={decrement} className="incBtn">-</button>
         {counter}
         <button onClick={increment} className="incBtn">+</button>
+        <h2>Total : {total} </h2>
         </div>
       </div>
 
