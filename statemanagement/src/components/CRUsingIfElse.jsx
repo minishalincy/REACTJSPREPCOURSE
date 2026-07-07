@@ -12,7 +12,7 @@ const CRUsingIfElse = () => {
   }
 
   function toggle() {
-    setChange(!change);
+    setChange(true);
   }
 
 
