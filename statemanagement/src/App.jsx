@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UseStateE from './components/UseStateE'
 import UseStateCounter from './components/UseStateCounter'
-import ConditionalRenderingUsingIfElse from './components/CRUsingIfElse'
+import CRUsingIfElse from './components/CRUsingIfElse'
 import UseStateP from './components/UseStateP'
 import CRUsingShortCircuit from './components/CRUsingShortCircuit'
+import CRexampleOne from './components/CRexampleOne'
 
 const App = () => {
+
   return (
     
     <>
@@ -14,8 +16,10 @@ const App = () => {
     <CRUsingIfElse/>
     <UseStateP/>
     <CRUsingShortCircuit/>
+    <CRexampleOne/>
+
     </>
+    
   )
 }
-
 export default App

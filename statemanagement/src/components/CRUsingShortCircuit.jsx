@@ -26,4 +26,4 @@ const CRUsingShortCircuit = ()=>{
     )
 }
 
-export default CRShortCircuit
+export default CRUsingShortCircuit
